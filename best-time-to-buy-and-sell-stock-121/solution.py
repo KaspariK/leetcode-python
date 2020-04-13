@@ -8,9 +8,7 @@ class Solution:
         minVal = sys.maxsize
 
         for num in prices:
-            if num < minVal:
-                minVal = num
-            else:
-                maxProfit = max(maxProfit, num - minVal)
+            minVal = min(minVal, num)
+            maxProfit = max(maxProfit, num - minVal)
 
         return maxProfit
