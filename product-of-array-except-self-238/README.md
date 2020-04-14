@@ -1,6 +1,6 @@
 # 238. Product of Array Except Itself
 
-Given an array nums of *n* integers where *n* > 1,  return an array `output` such that `output[i]` is equal to the product of all the elements of `nums` except `nums[i]`.
+Given an array nums of _n_ integers where _n_ > 1, return an array `output` such that `output[i]` is equal to the product of all the elements of `nums` except `nums[i]`.
 
 **Example:**
 
@@ -15,3 +15,7 @@ Output: [24,12,8,6]
 
 **Follow up:**
 Could you solve it with constant space complexity? (The output array **does not** count as extra space for the purpose of space complexity analysis.)
+
+**TODO**
+
+- Constant space complexity
