@@ -3,13 +3,13 @@ from solution import Solution
 
 
 class TestAdd(unittest.TestCase):
-    def test_solution(self):
+    def test_solution_same_character(self):
         s = Solution()
 
         result = s.longestPalindrome("aaa")
         self.assertEqual(result, 3)
 
-    def test_solution_length_greater_than_1(self):
+    def test_solution_length_different_characters(self):
         s = Solution()
 
         result = s.longestPalindrome("abcbadefthyu")
