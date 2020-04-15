@@ -2,7 +2,7 @@ import unittest
 from solution import Solution
 
 
-class TestAdd(unittest.TestCase):
+class TestSolution(unittest.TestCase):
     def test_solution(self):
         s = Solution()
 
