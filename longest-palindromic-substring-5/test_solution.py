@@ -2,18 +2,36 @@ import unittest
 from solution import Solution
 
 
-class TestAdd(unittest.TestCase):
-    def test_solution_same_character(self):
+class TestSolution(unittest.TestCase):
+    def test_solution_single_character_center(self):
         s = Solution()
 
-        result = s.longestPalindrome("aaa")
-        self.assertEqual(result, 3)
+        result = s.longestPalindrome("aba")
+        self.assertEqual(result, "aba")
 
-    def test_solution_length_different_characters(self):
+    def test_solution_double_character_center(self):
         s = Solution()
 
-        result = s.longestPalindrome("abcbadefthyu")
-        self.assertEqual(result, 5)
+        result = s.longestPalindrome("abba")
+        self.assertEqual(result, "abba")
+
+    def test_solution_no_palindrome(self):
+        s = Solution()
+
+        result = s.longestPalindrome("abcde")
+        self.assertEqual(result, "")
+
+    def test_solution_empty_string(self):
+        s = Solution()
+
+        result = s.longestPalindrome("")
+        self.assertEqual(result, "")
+
+    def test_solution_one_char_string(self):
+        s = Solution()
+
+        result = s.longestPalindrome("a")
+        self.assertEqual(result, "")
 
 
 if __name__ == "__main__":
