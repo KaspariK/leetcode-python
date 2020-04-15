@@ -15,12 +15,6 @@ class TestSolution(unittest.TestCase):
         result = s.longestPalindrome("abba")
         self.assertEqual(result, "abba")
 
-    def test_solution_no_palindrome(self):
-        s = Solution()
-
-        result = s.longestPalindrome("abcde")
-        self.assertEqual(result, "")
-
     def test_solution_empty_string(self):
         s = Solution()
 
@@ -31,7 +25,13 @@ class TestSolution(unittest.TestCase):
         s = Solution()
 
         result = s.longestPalindrome("a")
-        self.assertEqual(result, "")
+        self.assertEqual(result, "a")
+
+    def test_solution_one_char_palindrome(self):
+        s = Solution()
+
+        result = s.longestPalindrome("abc")
+        self.assertEqual(result, "a")
 
 
 if __name__ == "__main__":
