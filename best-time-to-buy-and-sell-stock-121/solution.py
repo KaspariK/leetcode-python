@@ -4,11 +4,11 @@ from typing import List
 
 class Solution:
     def maxProfit(self, prices: List[int]) -> int:
-        maxProfit = 0
-        minVal = sys.maxsize
+        max_profit = 0
+        min_val = sys.maxsize
 
         for num in prices:
-            minVal = min(minVal, num)
-            maxProfit = max(maxProfit, num - minVal)
+            min_val = min(min_val, num)
+            max_profit = max(max_profit, num - min_val)
 
-        return maxProfit
+        return max_profit

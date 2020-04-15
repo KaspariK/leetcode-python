@@ -3,28 +3,28 @@ from typing import List
 
 class Solution:
     def selfDividingNumbers(self, left: int, right: int) -> List[int]:
-        selfDividingNums = []
+        self_dividing_nums = []
 
         while (left <= right):
-            leftString = str(left)
-            negResultCounter = 0
+            left_string = str(left)
+            neg_result_counter = 0
 
-            for char in leftString:
+            for char in left_string:
                 digit = int(char)
 
                 if digit == 0:
-                    negResultCounter += 1
+                    neg_result_counter += 1
                     break
 
                 if (left % digit) == 0:
-                    negResultCounter += 0
+                    neg_result_counter += 0
                 else:
-                    negResultCounter += 1
+                    neg_result_counter += 1
                     break
 
-            if negResultCounter == 0:
-                selfDividingNums.append(left)
+            if neg_result_counter == 0:
+                self_dividing_nums.append(left)
 
             left += 1
 
-        return selfDividingNums
+        return self_dividing_nums
