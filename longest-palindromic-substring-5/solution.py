@@ -3,7 +3,7 @@ class Solution:
         if len(s) <= 1:
             return s
 
-        palindrome = ""
+        max_palindrome = ""
 
         # Loop through all characters and call expandFromCenter for each single and adjacent pair
         for i in range(len(s)):
@@ -14,10 +14,10 @@ class Solution:
             even_palindrome = self.expandFromCenter(i, i+1, s)
 
             # Keep max existing palindrome
-            palindrome = max(palindrome, odd_palindrome,
-                             even_palindrome, key=len)
+            max_palindrome = max(max_palindrome, odd_palindrome,
+                                 even_palindrome, key=len)
 
-        return palindrome
+        return max_palindrome
 
     def expandFromCenter(self, left_edge, right_edge, string) -> str:
         palindrome = ""
