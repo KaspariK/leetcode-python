@@ -3,7 +3,7 @@ class Solution:
         left_edge = 0
         right_edge = 0
 
-        max_substring = 0
+        longest_sub = 0
 
         unique_chars = set()
 
@@ -11,8 +11,9 @@ class Solution:
             if s[right_edge] not in unique_chars:
                 unique_chars.add(s[right_edge])
                 right_edge += 1
-                max_substring = max(max_substring, right_edge - left_edge)
+                longest_sub = max(longest_sub, right_edge - left_edge)
             else:
                 unique_chars.remove(s[left_edge])
                 left_edge += 1
-        return max_substring
+
+        return longest_sub
