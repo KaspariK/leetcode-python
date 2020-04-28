@@ -7,10 +7,7 @@ class TestSolution(unittest.TestCase):
         s = Solution()
 
         result = s.threeSum([-1, 0, 1, 2, -1, -4])
-        self.assertEqual(result, [
-            [-1, 0, 1],
-            [-1, -1, 2]
-        ])
+        self.assertEqual(result, [[-1, 0, 1], [-1, -1, 2]])
 
     def test_duplicates(self):
         s = Solution()
