@@ -1,10 +1,5 @@
 class Solution:
     def uniquePaths(self, m: int, n: int) -> int:
-        # Seems like a good fit for dynamic programming. The number of moves to
-        # the end square can be solved by breaking the overall problem (start -> end) into sub-problems
-        #
-        # Sub-problems in this case would be the move from start -> each cell and create a matrix
-
         # Init sub-problem matrix
         sub_prob_mt = [[0 for x in range(m)] for y in range(n)]
 
