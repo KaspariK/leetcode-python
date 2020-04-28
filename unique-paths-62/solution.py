@@ -6,15 +6,15 @@ class Solution:
         # Sub-problems in this case would be the move from start -> each cell and create a matrix
 
         # Init sub-problem matrix
-        sub_prob_mt = [[0 for x in range(m)] for y in range(m)]
+        sub_prob_mt = [[0 for x in range(m)] for y in range(n)]
 
         # Each square in the first row can be reached in 1 valid way
         for i in range(len(sub_prob_mt)):
-            sub_prob_mt[0][i] = 1
+            sub_prob_mt[i][0] = 1
 
         # Each square in the first column can be reached in 1 valid way
         for i in range(len(sub_prob_mt[0])):
-            sub_prob_mt[i][0] = 1
+            sub_prob_mt[0][i] = 1
 
         for i in range(1, len(sub_prob_mt)):
             for j in range(1, len(sub_prob_mt[0])):
