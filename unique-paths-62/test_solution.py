@@ -3,7 +3,7 @@ from solution import Solution
 
 
 class TestSolution(unittest.TestCase):
-    def test_solution(self):
+    def test_uniquePaths(self):
         s = Solution()
 
         result = s.uniquePaths(7, 3)

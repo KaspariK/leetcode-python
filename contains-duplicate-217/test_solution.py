@@ -3,13 +3,13 @@ from solution import Solution
 
 
 class TestSolution(unittest.TestCase):
-    def test_solution_true(self):
+    def test_containsDuplicate(self):
         s = Solution()
 
         result = s.containsDuplicate([1, 2, 3, 1])
         self.assertEqual(result, True)
 
-    def test_solution_negative_case(self):
+    def test_containsDuplicate_false(self):
         s = Solution()
 
         result = s.containsDuplicate([1, 2, 3, 4])

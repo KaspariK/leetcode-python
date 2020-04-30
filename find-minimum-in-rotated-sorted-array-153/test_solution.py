@@ -3,13 +3,13 @@ from solution import Solution
 
 
 class TestSolution(unittest.TestCase):
-    def test_solution(self):
+    def test_findMin(self):
         s = Solution()
 
         result = s.findMin([3, 4, 5, 1, 2])
         self.assertEqual(result, 1)
 
-    def test_single_int(self):
+    def test_findMin_single_int(self):
         s = Solution()
 
         result = s.findMin([3])

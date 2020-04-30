@@ -11,7 +11,7 @@ class Solution:
             odd_palindrome = self.expandFromCenter(i, i, s)
 
             # Even number palindromes
-            even_palindrome = self.expandFromCenter(i, i+1, s)
+            even_palindrome = self.expandFromCenter(i, i + 1, s)
 
             # Keep max existing palindrome
             max_palindrome = max(max_palindrome, odd_palindrome,

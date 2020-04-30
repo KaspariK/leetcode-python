@@ -3,13 +3,13 @@ from solution import Solution
 
 
 class TestSolution(unittest.TestCase):
-    def test_solution(self):
+    def test_numDecodings(self):
         s = Solution()
 
         result = s.numDecodings("12")
         self.assertEqual(result, 2)
 
-    def test_solution_longer(self):
+    def test_numDecodings_longer(self):
         s = Solution()
 
         result = s.numDecodings("226")

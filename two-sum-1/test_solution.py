@@ -3,7 +3,7 @@ from solution import Solution
 
 
 class TestSolution(unittest.TestCase):
-    def test_solution(self):
+    def test_twoSum(self):
         s = Solution()
 
         result = s.twoSum([2, 7, 11, 15], 9)

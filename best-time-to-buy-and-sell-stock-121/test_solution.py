@@ -3,13 +3,13 @@ from solution import Solution
 
 
 class TestSolution(unittest.TestCase):
-    def test_solution(self):
+    def test_maxProfit(self):
         s = Solution()
 
         result = s.maxProfit([7, 1, 5, 3, 6, 4])
         self.assertEqual(result, 5)
 
-    def test_solution_negative_case(self):
+    def test_maxProfit_false(self):
         s = Solution()
 
         result = s.maxProfit([7, 6, 5, 4, 3])

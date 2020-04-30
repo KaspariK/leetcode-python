@@ -3,7 +3,7 @@ from solution import Solution
 
 
 class TestSolution(unittest.TestCase):
-    def test_solution(self):
+    def test_productExceptSelf(self):
         s = Solution()
 
         result = s.productExceptSelf([4, 5, 1, 8, 2])

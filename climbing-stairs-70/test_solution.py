@@ -3,7 +3,7 @@ from solution import Solution
 
 
 class TestSolution(unittest.TestCase):
-    def test_solution(self):
+    def test_climbStairs(self):
         s = Solution()
 
         result = s.climbStairs(4)

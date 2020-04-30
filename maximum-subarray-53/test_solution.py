@@ -3,13 +3,13 @@ from solution import Solution
 
 
 class TestSolution(unittest.TestCase):
-    def test_solution(self):
+    def test_maxSubArray(self):
         s = Solution()
 
         result = s.maxSubArray([-2, 1, -3, 4, -1, 2, 1, -5, 4])
         self.assertEqual(result, 6)
 
-    def test_negative(self):
+    def test_maxSubArray_false(self):
         s = Solution()
 
         result = s.maxSubArray([-1])

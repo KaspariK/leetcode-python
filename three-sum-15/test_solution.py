@@ -3,13 +3,13 @@ from solution import Solution
 
 
 class TestSolution(unittest.TestCase):
-    def test_solution(self):
+    def test_threeSum(self):
         s = Solution()
 
         result = s.threeSum([-1, 0, 1, 2, -1, -4])
         self.assertEqual(result, [[-1, 0, 1], [-1, -1, 2]])
 
-    def test_duplicates(self):
+    def test_threeSum_duplicates(self):
         s = Solution()
 
         result = s.threeSum([-2, 0, 0, 2, 2])
