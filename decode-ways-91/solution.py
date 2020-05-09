@@ -18,7 +18,7 @@ class Solution:
 
         # Starting at 2, we can solve the remainder of the "sub problems"
         for i in range(2, len(s) + 1):
-            # Since our code includes up to 26 for a sinlge char we need to grab
+            # Since our code includes up to 26 for a single char we need to grab
             # both the current digit as well as the current digit and the one before
             single_digit = int(s[i-1])
             double_digit = int(s[i-2:i])
