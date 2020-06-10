@@ -35,10 +35,10 @@ class Solution:
     # I've spent basically the last 3-4 days reading about Manacher's algorithm so
     # I'd like to give it a go here. If it works, time complexity will go from
     # quadratic or O(n^2) to linear or O(n)
-
+    #
     # In all my research, this https://tarokuriyama.com/projects/palindrome2.php#linear_algo
     # has been the most helpful explanation. Truly, a fantastic resource.
-
+    #
     # The key to saving effort expended in the quadratic algorithm is to remove the
     # repeated work, and we can take advantage of certain palindromic properties to do so.
     #
